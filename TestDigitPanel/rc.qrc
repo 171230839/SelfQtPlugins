@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/电话键盘按键效果.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,69 @@
+﻿#ifndef DIGITPANEL_H
+#define DIGITPANEL_H
+
+#include <QtUiPlugin/QDesignerExportWidget>
+#include <QWidget>
+#include <QMouseEvent>
+class QLineEdit;
+class  QDESIGNER_WIDGET_EXPORT  DigitPanel : public QWidget
+{
+    Q_OBJECT
+    Q_PROPERTY(QColor borderColor READ borderColor WRITE setBorderColor )
+    Q_PROPERTY(int borderWidth READ borderWidth WRITE setBorderWidth)
+    Q_PROPERTY(QColor fontColor READ fontColor WRITE setFontColor )
+    Q_PROPERTY(QColor backColor READ backColor WRITE setBackColor)
+
+public:
+    DigitPanel(QWidget *parent = 0);
+
+    void paintEvent(QPaintEvent *event);
+    inline QColor borderColor(){
+        return this->m_borderColor;
+    }
+    inline void setBorderColor(QColor &color){
+        this->m_borderColor = color;
+    }
+
+    inline QColor fontColor(){
+        return this->m_fontColor;
+    }
+    inline void setFontColor(QColor &color){
+        this->m_fontColor = color;
+    }
+
+    inline QColor backColor(){
+        return this->m_backColor;
+    }
+    inline void setBackColor(QColor &color){
+        this->m_backColor = color;
+    }
+
+    inline void setInputLineEdit(QLineEdit * widget){
+        this->m_inputLineEdit = widget;
+    }
+    inline int borderWidth(){
+        return this->m_borderWidth;
+    }
+    inline void setBorderWidth(int width){
+        m_borderWidth = width;
+    }
+
+
+    virtual void mousePressEvent(QMouseEvent *event);
+    virtual void mouseMoveEvent(QMouseEvent * event);
+    virtual void mouseReleaseEvent(QMouseEvent *event);
+
+private:
+    QColor m_borderColor;
+    QColor m_fontColor;
+    QColor m_backColor;
+    QLineEdit * m_inputLineEdit;
+    int m_itemWidth;
+    int m_itemHeight;
+    int m_borderWidth;
+    bool pressed;
+    int pressBoxIndex;
+
+};
+
+#endif

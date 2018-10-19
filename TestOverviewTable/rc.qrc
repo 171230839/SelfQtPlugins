@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/滑块.png</file>
+        <file>images/apple.png</file>
+        <file>images/grapes.png</file>
+        <file>images/lemon.png</file>
+        <file>images/mango.png</file>
+        <file>images/orange.png</file>
+        <file>images/pear.png</file>
+        <file>images/pineapple.png</file>
+        <file>images/pomegranate.png</file>
+        <file>images/strawberry.png</file>
+        <file>images/watermelon.png</file>
+        <file>images/修改.png</file>
+        <file>images/修改 - 副本.png</file>
+    </qresource>
+</RCC>

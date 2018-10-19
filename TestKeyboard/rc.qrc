@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rc/ellipsis_32px_1100793_easyicon.net.png</file>
+        <file>rc/apple.png</file>
+        <file>rc/orange.png</file>
+        <file>rc/pear.png</file>
+        <file>rc/shift效果.png</file>
+        <file>rc/按键字母效果.png</file>
+        <file>rc/确定效果.png</file>
+        <file>rc/省略号.png</file>
+        <file>rc/1212.png</file>
+        <file>rc/cloud146.png</file>
+        <file>rc/44.png</file>
+        <file>rc/3.png</file>
+    </qresource>
+</RCC>
